@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainCardView"
+    android:focusable="true"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            tools:src="@drawable/tampilan"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/TI_img"
+            android:contentDescription="@string/the_international_dota_2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TI_season"
+            android:layout_marginTop="14dp"
+            android:padding="10dp"
+            android:text="@string/ti_dota_2_season"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#F60909"
+            android:layout_toEndOf="@+id/TI_img"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Thewinner"
+            android:layout_below="@+id/TI_season"
+            android:layout_toEndOf="@id/TI_img"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:text="@string/the_winner"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

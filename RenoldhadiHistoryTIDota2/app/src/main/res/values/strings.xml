@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Renoldhadi.HistoryTIDota2</string>
+    <string name="the_international_dota_2">The International dota 2</string>
+    <string name="ti_dota_2_season">TI Dota 2 Season</string>
+    <string name="the_winner">The Winner</string>
+    <string name="Season">Season</string>
+    <string name="penjelasanti">PenjelasanTI</string>
+    <string name="organizer">Organizer</string>
+    <string name="valve">Valve</string>
+    <string name="winner_team">WinnerTeam</string>
+    <string name="teams">Teams</string>
+    <string name="version_map">Version Map</string>
+    <string name="location">Location</string>
+    <string name="negara">Negara</string>
+    <string name="map">map</string>
+    <string name="Venue_Tempat">Venue</string>
+    <string name="Arena_Bertanding">arena</string>
+    <string name="dates">Dates</string>
+    <string name="tanggalmain">TanggalMain</string>
+    <string name="team_jumlah">Team</string>
+    <string name="jumlahteam">JumlahTeam</string>
+    <string name="jumlah_hadiah">Jumlah Hadiah</string>
+</resources>

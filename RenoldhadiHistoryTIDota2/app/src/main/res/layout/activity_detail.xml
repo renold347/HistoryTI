@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityDetail"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Logo_TI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/tampilan"/>
+            <TextView
+                android:textStyle="bold"
+                android:background="#EDECEC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_tv"
+                android:text="@string/Season"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/holo_red_light"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/Overview_Tv"
+            android:background="#EDECEC"
+            android:text="@string/penjelasanti"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            />
+        <TableLayout
+
+            android:layout_marginTop="10dp"
+            android:background="#EDECEC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    style="@style/TextSpec.Field"
+
+                    android:labelFor="@+id/Organizer_tv"
+                    android:text="@string/organizer" />
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:id="@+id/Organizer_tv"
+                    android:text="@string/valve"/>
+            </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                style="@style/TextSpec.Field"
+                android:labelFor="@+id/Winner_tv"
+                android:text="@string/winner_team" />
+            <TextView
+                style="@style/TextSpec.Value"
+                android:id="@+id/Winner_tv"
+                android:text="@string/teams"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                style="@style/TextSpec.Field"
+                android:labelFor="@+id/Versionmap_tv"
+                android:text="@string/version_map" />
+            <TextView
+                style="@style/TextSpec.Value"
+                android:id="@+id/Versionmap_tv"
+                android:text="@string/map"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                style="@style/TextSpec.Field"
+                android:labelFor="@+id/Location_tv"
+                android:text="@string/location" />
+            <TextView
+                style="@style/TextSpec.Value"
+                android:id="@+id/Location_tv"
+                android:text="@string/negara"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                style="@style/TextSpec.Field"
+                android:labelFor="@+id/Venue_tv"
+                android:text="@string/Venue_Tempat" />
+            <TextView
+                style="@style/TextSpec.Value"
+                android:id="@+id/Venue_tv"
+                android:text="@string/Arena_Bertanding"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                style="@style/TextSpec.Field"
+                android:labelFor="@+id/Dates_tv"
+                android:text="@string/dates" />
+            <TextView
+                style="@style/TextSpec.Value"
+                android:id="@+id/Dates_tv"
+                android:text="@string/tanggalmain"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                style="@style/TextSpec.Field"
+                android:labelFor="@+id/Team_tv"
+                android:text="@string/team_jumlah" />
+            <TextView
+                style="@style/TextSpec.Value"
+                android:id="@+id/Team_tv"
+                android:text="@string/jumlahteam"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                style="@style/TextSpec.Field"
+                android:labelFor="@+id/Prizepool_tv"
+                android:text="Prizepool" />
+            <TextView
+                style="@style/TextSpec.Value"
+                android:id="@+id/Prizepool_tv"
+                android:text="@string/jumlah_hadiah"/>
+        </TableRow>
+
+
+</TableLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
