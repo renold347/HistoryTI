@@ -12,7 +12,6 @@ import com.example.renoldhadihistorytidota2.util.bind
 
 class ActivityDetail : AppCompatActivity() {
 
-    private val tvnamaseason : TextView by bind(R.id.name_tv)
     private val tvOverview : TextView by bind(R.id.Overview_Tv)
     private val tvOrganizer : TextView by bind(R.id.Organizer_tv)
     private val tvWinner : TextView by bind(R.id.Winner_tv)
@@ -29,33 +28,32 @@ class ActivityDetail : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
         this.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT
 
-        val seasontiay = intent.getStringExtra(EXTRA_NAMA)
+        val namatiay = intent.getStringExtra(EXTRA_NAMA)
         val overview = intent.getStringExtra(EXTRA_OVERVIEW)
-        val Organizer = intent.getStringExtra(EXTRA_ORGANIZER)
+        val organizer = intent.getStringExtra(EXTRA_ORGANIZER)
         val dWinner = intent.getStringExtra(EXTRA_WINNER)
-        val VersiMap = intent.getStringExtra(EXTRA_MAP)
-        val Location = intent.getStringExtra(EXTRA_LOKASI)
-        val Venue = intent.getStringExtra(EXTRA_ARENA)
-        val Dates = intent.getStringArrayExtra(EXTRA_DATES)
-        val Teams = intent.getStringExtra(EXTRA_TEAMS)
-        val Prizepool = intent.getStringExtra(EXTRA_PRIZE_POOL)
+        val versiMap = intent.getStringExtra(EXTRA_MAP)
+        val location = intent.getStringExtra(EXTRA_LOKASI)
+        val venue = intent.getStringExtra(EXTRA_ARENA)
+        val dates = intent.getStringArrayExtra(EXTRA_DATES)
+        val teams = intent.getStringExtra(EXTRA_TEAMS)
+        val prizepool = intent.getStringExtra(EXTRA_PRIZE_POOL)
         val photos = intent.getIntExtra(EXTRA_LOGO_TI, 0)
 
         val actionBar= supportActionBar
         actionBar.run {
-            this!!.title= seasontiay
+            this!!.title= namatiay
             setDisplayHomeAsUpEnabled(true)
         }
-        tvnamaseason.text= seasontiay
         tvOverview.text= overview
-        tvOrganizer.text= Organizer
+        tvOrganizer.text= organizer
         tvWinner.text= dWinner
-        tvVersionMap.text= VersiMap
-        tvLocation.text= Location
-        tvVenue.text= Venue
-        tvDates.text= Dates.toString()
-        tvTeams.text= Teams
-        tvPrizepool.text=Prizepool
+        tvVersionMap.text= versiMap
+        tvLocation.text= location
+        tvVenue.text= venue
+        tvDates.text= dates.toString()
+        tvTeams.text= teams
+        tvPrizepool.text=prizepool
         Glide.with(this)
             .load(photos)
             .apply(RequestOptions())

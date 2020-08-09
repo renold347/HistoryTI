@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Renoldhadi.HistoryTIDota2</string>
+    <string name="app_name">History TI Dota 2</string>
     <string name="the_international_dota_2">The International dota 2</string>
     <string name="ti_dota_2_season">TI Dota 2 Season</string>
     <string name="the_winner">The Winner</string>
@@ -20,4 +20,7 @@
     <string name="team_jumlah">Team</string>
     <string name="jumlahteam">JumlahTeam</string>
     <string name="jumlah_hadiah">Jumlah Hadiah</string>
+    <string name="about_me">Tentang saya</string>
+    <string name="app_version">v.1.0.0</string>
+
 </resources>

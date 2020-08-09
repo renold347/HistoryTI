@@ -5,10 +5,12 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.renoldhadihistorytidota2.ActivityDetail
+
 
 
 
@@ -24,29 +26,35 @@ class tiayAdapter (private val listtiay : ArrayList<tiaydata>) : RecyclerView.Ad
 
     @SuppressLint("setTextI18n")
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (nama,Winnerteam,Location,Venue,dates,teams,Prizepool,photo)= listtiay[position]
+        val (namatiay,overview,organizer,winnerteam,map,location, venue,dates,teams,prizepool, photo)= listtiay[position]
         val nContext = holder.itemView.context
         Glide.with(holder.itemView.context)
             .load(photo)
             .apply(RequestOptions())
             .into(holder.photo)
 
-        holder.nama.text= nama
-        holder.Winnerteam.text= "Winner : $Winnerteam"
+        holder.namatiay.text= namatiay
+        holder.winnerteam.text= "Winner : $winnerteam"
         holder.itemView.setOnClickListener{
             val nDetail = Intent(nContext, ActivityDetail::class.java)
-            nDetail.putExtra(ActivityDetail.EXTRA_NAMA, nama)
-            nDetail.putExtra(ActivityDetail.EXTRA_OVERVIEW, )
-            nDetail.putExtra(ActivityDetail.EXTRA_KODE_SWIFT, Location)
-            nDetail.putExtra(ActivityDetail.EXTRA_ALAMAT_BANK, Venue)
-            nDetail.putExtra(ActivityDetail.EXTRA_NO_TELP, dates)
-            nDetail.putExtra(ActivityDetail.EXTRA_WEBSITE, teams)
-            nDetail.putExtra(ActivityDetail.EXTRA_LOGO_BANK, Prizepool)
+            nDetail.putExtra(ActivityDetail.EXTRA_NAMA, namatiay)
+            nDetail.putExtra(ActivityDetail.EXTRA_OVERVIEW, overview)
+            nDetail.putExtra(ActivityDetail.EXTRA_ORGANIZER, organizer)
+            nDetail.putExtra(ActivityDetail.EXTRA_WINNER, winnerteam)
+            nDetail.putExtra(ActivityDetail.EXTRA_MAP, map)
+            nDetail.putExtra(ActivityDetail.EXTRA_LOKASI, location)
+            nDetail.putExtra(ActivityDetail.EXTRA_ARENA, venue)
+            nDetail.putExtra(ActivityDetail.EXTRA_DATES, dates)
+            nDetail.putExtra(ActivityDetail.EXTRA_TEAMS,teams)
+            nDetail.putExtra(ActivityDetail.EXTRA_PRIZE_POOL,prizepool)
+            nDetail.putExtra(ActivityDetail.EXTRA_LOGO_TI, photo)
             nContext.startActivity(nDetail)
     }
 
     }
 
        inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var
-       }
+           var namatiay: TextView =itemView.findViewById(R.id.TI_season)
+           var winnerteam:TextView=itemView.findViewById(R.id.Thewinner)
+           var photo : ImageView = itemView.findViewById(R.id.TI_img)
+       }}

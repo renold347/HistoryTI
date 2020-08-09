@@ -4,7 +4,10 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@android:color/darker_gray</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_black_24dp</item>
+        <item name="android:windowContentTransitions">true</item>
     </style>
     <style name="TextSpec">
         <item name="android:textSize">14sp</item>
@@ -21,6 +24,11 @@
     <item name="android:layout_weight">1</item>
         <item name="android:layout_marginLeft">10dp</item>
     <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@android:color/secondary_text_dark</item>
     </style>
 
 </resources>
